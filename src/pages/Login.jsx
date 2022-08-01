@@ -32,7 +32,7 @@ export default function Login() {
       <Container
         maxWidth="xs"
         sx={{
-          height: "600px",
+          height: "620px",
           backgroundColor: "white",
           margin: "60px auto",
           borderRadius: "1rem",
@@ -103,7 +103,7 @@ export default function Login() {
             <Button
               variant="contained"
               fullWidth
-              sx={{ margin: "1rem 0", backgroundColor:"#046582", fontSize:"18px"}}
+              sx={{ margin: "1rem 0", backgroundColor:"#046582", fontSize:"18px", fontWeight:"bold"}}
               type="submit"
             >
               LOGIN
@@ -111,7 +111,7 @@ export default function Login() {
             <Button
               variant="contained"
               fullWidth
-              sx={{ backgroundColor:"#046582", fontSize:"18px"}}
+              sx={{ backgroundColor:"lightgray", color:"black", fontSize:"16px", fontWeight:"bold"}}
               type="submit"
             >
             WITH  <img className="google" src={ google} alt="" />

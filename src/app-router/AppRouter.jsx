@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 import Details from "../pages/Details";
 import Login from "../pages/Login";
@@ -13,7 +13,7 @@ import PrivateRouter from "./PrivateRouter";
 const AppRouter = () => {
   return (
     <div>
-      <BrowserRouter>
+      
         <Navbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
@@ -26,7 +26,7 @@ const AppRouter = () => {
             <Route path="" element={<Details />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      
     </div>
   );
 };

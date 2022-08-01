@@ -13,6 +13,7 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email, password);
@@ -32,7 +33,7 @@ export default function Register() {
       <Container
         maxWidth="xs"
         sx={{
-          height: "600px",
+          height: "620px",
           backgroundColor: "white",
           margin: "60px auto",
           borderRadius: "1rem",
@@ -103,7 +104,7 @@ export default function Register() {
             <Button
               variant="contained"
               fullWidth
-              sx={{ margin: "1rem 0", backgroundColor:"#046582", fontSize:"18px"}}
+              sx={{ margin: "1rem 0", backgroundColor:"#046582", fontSize:"16px", fontWeight:"bold"}}
               type="submit"
             >
               REGISTER
@@ -111,8 +112,9 @@ export default function Register() {
             <Button
               variant="contained"
               fullWidth
-              sx={{ backgroundColor:"#046582", fontSize:"18px"}}
+              sx={{ backgroundColor:"lightgray", color:"black", fontSize:"16px", fontWeight:"bold"}}
               type="submit"
+              onClick={() => signUpGoogleProvider(navigate)}
             >
             WITH  <img className="google" src={ google} alt="" />
             </Button>
