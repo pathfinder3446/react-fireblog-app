@@ -16,16 +16,23 @@ import { useState } from "react";
 export default function BlogCard() {
   const { cardInfo } = useContext(BlogContext);
   const navigate = useNavigate();
-  const [like, setlike] = useState(false)
+//   const [like, setlike] = useState(false)
 
   console.log(cardInfo);
 
-  const handleLike = () =>{
-    setlike(!like)
-  };
- 
+//   const handleLike = (id) =>{
+//     console.log(id);
+//     const clickedId = cardInfo.filter((item) => item.id === id)
+//     console.log(clickedId);
+//        if(clickedId[0].id === id) {
+//         <style></style>={{
+//             color:  "red"
+//           }}
+//        }
+//   };
+  
   return cardInfo.map((card, index) => {
-    const { id } = card;
+   const { id } = card;
     return (
       <Card sx={{ width: 320, height: 450, m: 3 }} key={index}>
         <Box
@@ -74,10 +81,8 @@ export default function BlogCard() {
         <CardActions disableSpacing>
           <IconButton  
           aria-label="add to favorites"
-          sx={{
-            color: like ? "red" : ""
-          }}
-          onClick={() => handleLike()}>
+        //   onClick={() => handleLike(id)}
+          >
             <FavoriteIcon />
           </IconButton>
           <IconButton aria-label="share">

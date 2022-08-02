@@ -45,3 +45,17 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.details-header{
+    font-family:'Girassol', cursive;
+    font-weight: bolder;
+    color: #046582;
+}
