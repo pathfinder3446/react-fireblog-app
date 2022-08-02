@@ -37,5 +37,11 @@
     color: #046582;
     font-size: 36px;
     text-align: center;
-    
+    /* width: 24rem; */
+}
+
+.dashboard-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
