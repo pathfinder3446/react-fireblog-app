@@ -10,7 +10,7 @@ import {
     signInWithPopup,
   } from "firebase/auth";
   import { getDatabase } from "firebase/database";
-  import { Navigate } from "react-router-dom";
+  
   import { toastSuccessNotify, toastWarnNotify } from "./toastNotify";
   
 

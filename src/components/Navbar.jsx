@@ -76,7 +76,7 @@ export default function Navbar() {
               style={{ cursor: "pointer" }}
             >
               <h2 className="line-through bg-success">
-                <span>&lt;BrianKane /&gt; Blog</span>
+                <span>──── &lt;BrianKane /&gt; Blog ──── </span>
               </h2>
             </Typography>
           )}

@@ -30,3 +30,12 @@
     margin-left: 1rem;
     padding-top: 2px;
 }
+
+.dashboard-header{
+    font-family:'Girassol', cursive;
+    font-weight: bolder;
+    color: #046582;
+    font-size: 36px;
+    text-align: center;
+    
+}
