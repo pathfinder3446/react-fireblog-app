@@ -58,7 +58,6 @@ export default function Register() {
                   height: "8rem",
                   padding: "2rem",
                   borderRadius: "50%",
-                  // border: "2px solid red",
                   background: "#046582",
                 }}
               />
@@ -78,7 +77,7 @@ export default function Register() {
           </Typography>
           <Box component="form" onSubmit={handleSubmit}>
             <TextField
-              // error={!email}
+              
               id="outlined-error"
               label="Email"
               autoFocus
@@ -91,11 +90,9 @@ export default function Register() {
               sx={{ mb: "1rem" }}
             />
             <TextField
-              // error={!password}
               id="outlined-error-helper-text"
               label="Password"
               type="password"
-              // helperText={password === "" ? "Password is required." : ""}
               required
               fullWidth
               onChange={(e) => setPassword(e.target.value)}
@@ -113,7 +110,6 @@ export default function Register() {
               variant="contained"
               fullWidth
               sx={{ backgroundColor:"lightgray", color:"black", fontSize:"16px", fontWeight:"bold"}}
-              type="submit"
               onClick={() => signUpGoogleProvider(navigate)}
             >
             WITH  <img className="google" src={ google} alt="" />

@@ -39,16 +39,19 @@ export const signIn = async (email, password, navigate) => {
       email,
       password
     );
-    toastSuccessNotify("Registered successfully!");
+    
+    // toastSuccessNotify("Registered successfully!");
+    
   } catch (error) {
     // toastWarnNotify(`${error.message}`);
     console.log(error);
     navigate("/");
+    
   }
 };
 
 //*login
-export const LogIn = async (email, password, navigate) => {
+export const logIn = async (email, password, navigate) => {
   try {
     const userCredential = await signInWithEmailAndPassword(
       auth,

@@ -5,7 +5,7 @@ import { Container } from "@mui/system";
 import blog from "../assets/blog.png";
 import google from "../assets/google.png";
 import { useState } from "react";
-import { signIn, signUpGoogleProvider } from "../helpers/firebase";
+import { logIn, signUpGoogleProvider } from "../helpers/firebase";
 import { useNavigate } from "react-router-dom";
 import register from "../assets/register.jpg";
 
@@ -16,7 +16,7 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email, password);
-    signIn(email, password, navigate);
+    logIn(email, password, navigate);
     setEmail("");
     setPassword("");
   };
@@ -112,7 +112,7 @@ export default function Login() {
               variant="contained"
               fullWidth
               sx={{ backgroundColor:"lightgray", color:"black", fontSize:"16px", fontWeight:"bold"}}
-              type="submit"
+              onClick={() => signUpGoogleProvider(navigate)}
             >
             WITH  <img className="google" src={ google} alt="" />
             </Button>
