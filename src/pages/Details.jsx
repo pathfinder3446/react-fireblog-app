@@ -22,7 +22,7 @@ const Details = () => {
   console.log(cardInfo);
 
   return cardInfo
-    .filter((data) => data.id == id)
+    .filter((data) => data.id === id)
     .map((card, index) => {
       return (
         <div className="details-container" key={index}>
@@ -94,6 +94,7 @@ const Details = () => {
           >
             <Button
             sx={{marginRight: "6rem", backgroundColor:"green"}}
+            onClick={() => navigate(`update-blog/${id}`)}
             >UPDATE</Button>
 
             <Button
