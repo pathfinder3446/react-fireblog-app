@@ -26,3 +26,25 @@ export const getCardData = (setCardInfo, cardInfo) => {
       }
     });
   };
+
+  export const updateCardData = (
+    updateTitle,
+    updateImageURL,
+    updateContent,
+    email,
+    id
+  ) => {
+    update(ref(db, `/${id}`), {
+      title: updateTitle,
+      imgURL: updateImageURL,
+      content: updateContent,
+      email: email,
+      id: id,
+    });
+  };
+  
+  export const deleteBlog = (card, navigate) => {
+    remove(ref(db, `${card.id}`));
+    navigate("/");
+    // toastSuccessNotify("Card deleted successfully");
+  };

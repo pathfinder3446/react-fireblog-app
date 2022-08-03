@@ -13,6 +13,7 @@ import { Box } from "@mui/system";
 import { useNavigate, useParams } from "react-router-dom";
 import { useContext } from "react";
 import { Button, ButtonGroup } from "@mui/material";
+import { deleteBlog } from "../helpers/functions";
 
 const Details = () => {
   const { cardInfo } = useContext(BlogContext);
@@ -94,11 +95,12 @@ const Details = () => {
           >
             <Button
             sx={{marginRight: "6rem", backgroundColor:"green"}}
-            onClick={() => navigate(`update-blog/${id}`)}
+            onClick={() => navigate(`/update-blog/${id}`, {state:card})}
             >UPDATE</Button>
 
             <Button
             sx={{marginLight: "6rem", backgroundColor:"RED"}}
+            onClick={() => deleteBlog(card, navigate)}
             >DELETE</Button>
           </ButtonGroup>
           )}

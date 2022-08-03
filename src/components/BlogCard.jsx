@@ -34,7 +34,7 @@ export default function BlogCard() {
   return cardInfo.map((card, index) => {
    const { id } = card;
     return (
-      <Card sx={{ width: 320, height: 450, m: 3 }} key={index}>
+      <Card className="card" sx={{ width: 320, height: 450, m: 3 }} key={index}>
         <Box
           sx={{
             textAlign: "center",
