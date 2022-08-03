@@ -40,10 +40,10 @@ export const signIn = async (email, password, navigate) => {
       password
     );
     
-    // toastSuccessNotify("Registered successfully!");
+    toastSuccessNotify("Registered successfully!");
     
   } catch (error) {
-    // toastWarnNotify(`${error.message}`);
+    toastWarnNotify(`${error.message}`);
     console.log(error);
     navigate("/");
     
@@ -59,9 +59,9 @@ export const logIn = async (email, password, navigate) => {
       password
     );
     navigate("/");
-    // toastSuccessNotify("Logged in successfully!");
+    toastSuccessNotify("Logged in successfully!");
   } catch (error) {
-    // toastWarnNotify("email or password is wrong");
+    toastWarnNotify("email or password is wrong");
     console.log(error.message);
   }
 };
@@ -80,7 +80,7 @@ export const userObserver = (setCurrentUser) => {
 export const logOut = (navigate) => {
   try {
     signOut(auth);
-    // toastSuccessNotify("Logged out successfully!");
+    toastSuccessNotify("Logged out successfully!");
     navigate("/");
   } catch (error) {
     console.log(error);
@@ -94,7 +94,7 @@ export const signUpGoogleProvider = (navigate) => {
   signInWithPopup(auth, provider)
     .then((result) => {
       console.log(result);
-      // toastSuccessNotify("Logged in successfully!");
+      toastSuccessNotify("Logged in successfully!");
       navigate("/");
     })
     .catch((error) => {
