@@ -28,8 +28,8 @@ export default function UpdateBlog() {
     // toastSuccessNotify("Card created successfully");
   };
   
-  console.log(updateImageURL);
-  console.log(updateTitle);
+  // console.log(updateImageURL);
+  // console.log(updateTitle);
 
   return (
     <Container
