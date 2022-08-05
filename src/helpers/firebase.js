@@ -16,21 +16,15 @@ import {
 
 
   const firebaseConfig = {
-    // apiKey: "AIzaSyDa7pHV65oe7NJUjP8supqgV31W3U9qSI4",
-    // authDomain: "fireblog-app-ea419.firebaseapp.com",
-    // databaseURL: "https://fireblog-app-ea419-default-rtdb.europe-west1.firebasedatabase.app",
-    // projectId: "fireblog-app-ea419",
-    // storageBucket: "fireblog-app-ea419.appspot.com",
-    // messagingSenderId: "1095675052044",
-    // appId: "1:1095675052044:web:c60b13976335f8112eae29"
 
   apiKey: process.env.REACT_APP_apiKey,
   authDomain: process.env.REACT_APP_authDomain,
+  databaseURL: process.env.REACT_APP_databaseURL,
   projectId: process.env.REACT_APP_projectId,
   storageBucket: process.env.REACT_APP_storageBucket,
   messagingSenderId: process.env.REACT_APP_messagingSenderId,
   appId: process.env.REACT_APP_appId,
-  databaseURL: process.env.REACT_APP_databaseURL,
+  
   };
 
 // Initialize Firebase
