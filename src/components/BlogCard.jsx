@@ -41,6 +41,7 @@ export default function BlogCard() {
             "&:hover": {
               backgroundColor: "primary.main",
               opacity: [0.9, 0.8, 0.7],
+              borderRadius: "16px"
             },
           }}
           onClick={() => navigate(`details/${id}`)}
@@ -78,7 +79,7 @@ export default function BlogCard() {
           {card.email}
         </Typography>
 
-        <CardActions disableSpacing>
+        <CardActions className="card-icons" disableSpacing>
           <IconButton  
           aria-label="add to favorites"
         //   onClick={() => handleLike(id)}

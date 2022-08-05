@@ -94,12 +94,12 @@ const Details = () => {
             }}
           >
             <Button
-            sx={{marginRight: "6rem", backgroundColor:"green"}}
+            sx={{marginRight: "6rem", backgroundColor:"green",borderRadius:"16px"}}
             onClick={() => navigate(`/update-blog/${id}`, {state:card})}
             >UPDATE</Button>
 
             <Button
-            sx={{marginLight: "6rem", backgroundColor:"RED"}}
+            sx={{marginLight: "6rem", backgroundColor:"RED", borderRadius:"16px"}}
             onClick={() => deleteBlog(card, navigate)}
             >DELETE</Button>
           </ButtonGroup>
