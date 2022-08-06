@@ -3,9 +3,9 @@ import BlogCard from '../components/BlogCard'
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className='dashboard-page'>
       <h1 className='dashboard-header'>
-        ──── DASHBOARD ────</h1>
+        ────&lt; DASHBOARD &gt;────</h1>
         <div className="dashboard-container">
           <BlogCard />
         </div>

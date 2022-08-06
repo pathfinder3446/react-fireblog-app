@@ -1,8 +1,14 @@
 
+.app{
+    /* background-color: black; */
+    background-color: #525F82
+}
 
 .line-through{
     font-family:'Girassol', cursive;
     font-weight: normal;
+    color: #046582;
+    text-align: center;
 }
 
 .line-through-register{
@@ -37,18 +43,27 @@
     color: #046582;
     font-size: 36px;
     text-align: center;
+    
     /* width: 24rem; */
 }
+
 
 .dashboard-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #16232E;
+
 }
 
 .card{
     cursor: pointer;
+
 }
+ .card:hover{
+    transition: transform .4s;
+    transform: scale(1.1);
+ }
 
 
 
@@ -65,3 +80,82 @@
     font-weight: bolder;
     color: #046582;
 }
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 600px;
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16232E;
+    color: antiquewhite;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    width: 1000px;
+    margin-top: 6rem;
+
+}
+
+.about-container h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* .profile-pic{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+} */
+
+.links{
+
+    display: flex;
+    
+
+    
+}
+
+.links a{
+    margin: 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bolder;
+
+    background-color: #F2AFA0;
+    height: 4rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.links img{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+/* .btn-linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */

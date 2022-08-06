@@ -34,14 +34,13 @@ export default function BlogCard() {
   return cardInfo.map((card, index) => {
    const { id } = card;
     return (
-      <Card className="card" sx={{ width: 320, height: 450, m: 3 }} key={index}>
+      <Card className="card" sx={{ width: 320, height: 450, m: 4, boxShadow: "3px 3px 4px 3px #D8EBF2" }} key={index}>
         <Box
           sx={{
             textAlign: "center",
             "&:hover": {
               backgroundColor: "primary.main",
               opacity: [0.9, 0.8, 0.7],
-              borderRadius: "16px"
             },
           }}
           onClick={() => navigate(`details/${id}`)}
@@ -75,6 +74,7 @@ export default function BlogCard() {
           sx={{ textAlign: "center" }}
           variant="h6"
           color="text.secondary"
+          fontStyle="bold"
         >
           {card.email}
         </Typography>

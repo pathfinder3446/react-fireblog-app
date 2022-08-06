@@ -8,6 +8,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import cw from "../assets/cw.jpeg";
+import brianicon from "../assets/brianicon.png";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContext";
 import { useContext } from "react";
@@ -51,10 +52,10 @@ export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between", backgroundColor:"#046582" }}>
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between", backgroundColor:"#7BA69E" }}>
           <Typography variant="h6" component="div">
             <Link to="/">
-              <img src={cw} alt="" style={{ height: "40px" }} />
+              <img src={brianicon} alt="" style={{ height: "90px" }} />
             </Link>
           </Typography>
 
@@ -65,9 +66,9 @@ export default function Navbar() {
               style={{ cursor: "pointer"}}
               sx={{ display: { xs: "none", md: "flex" } }}
             >
-              <h2 className="line-through bg-success">
+              <h1 className="line-through bg-success">
                 <span>&lt;BrianKane /&gt; Blog</span>
-              </h2>
+              </h1>
             </Typography>
           ) : (
             <Typography
@@ -86,7 +87,7 @@ export default function Navbar() {
               style={{
                 position: "absolute",
                 right: "70px",
-                top: "20px",
+                top: "40px",
                 cursor: "pointer",
               }}
               onClick={() => navigate("profile")}
@@ -100,6 +101,8 @@ export default function Navbar() {
               aria-haspopup="true"
               onClick={handleMenu}
               color="inherit"
+         
+              
             >
               <AccountCircle />
             </IconButton>
