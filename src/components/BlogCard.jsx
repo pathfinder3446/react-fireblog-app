@@ -20,21 +20,11 @@ export default function BlogCard() {
 
   console.log(cardInfo);
 
-//   const handleLike = (id) =>{
-//     console.log(id);
-//     const clickedId = cardInfo.filter((item) => item.id === id)
-//     console.log(clickedId);
-//        if(clickedId[0].id === id) {
-//         <style></style>={{
-//             color:  "red"
-//           }}
-//        }
-//   };
   
   return cardInfo.map((card, index) => {
    const { id } = card;
     return (
-      <Card className="card" sx={{ width: 320, height: 450, m: 4, boxShadow: "3px 3px 4px 3px #D8EBF2" }} key={index}>
+      <Card className="card" sx={{ width: 320, height: 500, m: 4, boxShadow: "3px 3px 4px 3px #D8EBF2" }} key={index}>
         <Box
           sx={{
             textAlign: "center",
@@ -60,6 +50,15 @@ export default function BlogCard() {
             <Typography variant="h6" sx={{ color: "#1976d2" }}>
               {card.title}
             </Typography>
+
+            <Typography
+          sx={{ textAlign: "left", marginLeft:"6px" }}
+          variant="h6"
+          color="text.secondary"
+          fontStyle="bold"
+        >
+          {card.date}
+        </Typography>
            
             <Typography
               sx={{ height: 80, overflow: "hidden" }}
@@ -70,8 +69,9 @@ export default function BlogCard() {
             </Typography>
           </CardContent>
         </Box>
+        
         <Typography
-          sx={{ textAlign: "center" }}
+          sx={{ textAlign: "left", marginLeft:"6px" }}
           variant="h6"
           color="text.secondary"
           fontStyle="bold"
@@ -79,16 +79,19 @@ export default function BlogCard() {
           {card.email}
         </Typography>
 
-        <CardActions className="card-icons" disableSpacing>
-          <IconButton  
+        <CardActions disableSpacing>
+          <div  className="card-icons">
+            <IconButton  
           aria-label="add to favorites"
-        //   onClick={() => handleLike(id)}
+         
           >
             <FavoriteIcon />
           </IconButton>
           <IconButton aria-label="share">
             <ChatBubbleOutlineIcon />
           </IconButton>
+          </div>
+          
         </CardActions>
       </Card>
     );

@@ -119,6 +119,10 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.about-container p{
+    text-align: center;
+}
+
 /* .profile-pic{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 } */

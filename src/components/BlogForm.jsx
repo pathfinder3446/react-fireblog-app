@@ -21,7 +21,11 @@ export default function BlogForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    writeCardInfo(title, imageURL, content, currentUser.email);
+    const current = new Date();
+    const date = `${current.getDate()}/${
+      current.getMonth() + 1
+    }/${current.getFullYear()}`;
+    writeCardInfo(title, imageURL, content, currentUser.email, date);
     navigate("/");
     // toastSuccessNotify("Card created successfully");
   };

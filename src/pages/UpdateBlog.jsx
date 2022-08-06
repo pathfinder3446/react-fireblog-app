@@ -16,6 +16,7 @@ export default function UpdateBlog() {
   const [updateTitle, setUpdateTitle] = useState(state.title);
   const [updateImageURL, setUpdateImageURL] = useState(state.imgURL);
   const [updateContent, setUpdateContent] = useState(state.content);
+  const [updateDate, setUpdateDate] = useState(state.date)
 
   const { currentUser } = useContext(AuthContext);
 
@@ -23,7 +24,7 @@ export default function UpdateBlog() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    updateCardData(updateTitle, updateImageURL, updateContent, currentUser.email, id);
+    updateCardData(updateTitle, updateImageURL, updateContent, updateDate, currentUser.email, id);
     navigate("/");
     // toastSuccessNotify("Card created successfully");
   };

@@ -3,13 +3,14 @@ import { db } from "./firebase";
 import { uid } from "uid";
 // import { toastSuccessNotify } from "./toastNotify";
 
-export const writeCardInfo = (title, imgURL, content, email) => {
+export const writeCardInfo = (title, imgURL, content, email, date) => {
   const uuid = uid();
   set(ref(db, `/${uuid}`), {
     title: title,
     imgURL: imgURL,
     content: content,
     email: email,
+    date: date,
     id: uuid,
     
   });
@@ -32,6 +33,7 @@ export const getCardData = (setCardInfo, cardInfo) => {
     updateImageURL,
     updateContent,
     email,
+    updateDate,
     id
   ) => {
     update(ref(db, `/${id}`), {
@@ -39,6 +41,7 @@ export const getCardData = (setCardInfo, cardInfo) => {
       imgURL: updateImageURL,
       content: updateContent,
       email: email,
+      date: updateDate,
       id: id,
     });
   };
