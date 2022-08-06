@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import {updateCardData} from "../helpers/functions"
-// import { toastSuccessNotify } from "../helpers/toastNotify";
+import { toastSuccessNotify } from "../helpers/toastNotify";
 
 export default function UpdateBlog() {
   const { id } = useParams();
@@ -26,7 +26,7 @@ export default function UpdateBlog() {
     e.preventDefault();
     updateCardData(updateTitle, updateImageURL, updateContent, updateDate, currentUser.email, id);
     navigate("/");
-    // toastSuccessNotify("Card created successfully");
+    toastSuccessNotify("Card created successfully");
   };
   
   // console.log(updateImageURL);

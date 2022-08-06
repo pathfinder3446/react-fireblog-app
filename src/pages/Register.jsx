@@ -50,7 +50,7 @@ export default function Register() {
               justifyContent: "center",
             }}
           >
-            <a href="#">
+            <a >
               <img
                 src={blog}
                 alt=""
