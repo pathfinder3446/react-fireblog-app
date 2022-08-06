@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-fireblog-app/static/css/main.9fe4db60.css",
+    "main.js": "/react-fireblog-app/static/js/main.853ec334.js",
+    "static/media/brian.jpg": "/react-fireblog-app/static/media/brian.49080fcdd096f046f3f1.jpg",
+    "static/media/register.jpg": "/react-fireblog-app/static/media/register.50bb0bed9314378cd9c8.jpg",
+    "static/media/cw.jpeg": "/react-fireblog-app/static/media/cw.041cf5e8b9f405eff614.jpeg",
+    "static/media/blog.png": "/react-fireblog-app/static/media/blog.7e6674a5bbc688626d09.png",
+    "static/media/brianicon.png": "/react-fireblog-app/static/media/brianicon.0c1f58e9961a660664d0.png",
+    "static/media/google.png": "/react-fireblog-app/static/media/google.d1e31f45be7227c7b9e4.png",
+    "index.html": "/react-fireblog-app/index.html",
+    "main.9fe4db60.css.map": "/react-fireblog-app/static/css/main.9fe4db60.css.map",
+    "main.853ec334.js.map": "/react-fireblog-app/static/js/main.853ec334.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fe4db60.css",
+    "static/js/main.853ec334.js"
+  ]
+}
