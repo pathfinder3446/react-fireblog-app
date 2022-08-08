@@ -30,7 +30,7 @@ export default function UpdateBlog() {
   };
   
   // console.log(updateImageURL);
-  // console.log(updateTitle);
+  console.log(updateTitle);
 
   return (
     <Container
