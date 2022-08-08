@@ -3,6 +3,7 @@ import { db } from "./firebase";
 import { uid } from "uid";
 import { toastSuccessNotify } from "./toastNotify";
 
+
 export const writeCardInfo = (title, imgURL, content, email, date) => {
   const uuid = uid();
   set(ref(db, `/${uuid}`), {

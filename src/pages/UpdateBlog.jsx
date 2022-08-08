@@ -17,7 +17,7 @@ export default function UpdateBlog() {
   const [updateImageURL, setUpdateImageURL] = useState(state.imgURL);
   const [updateContent, setUpdateContent] = useState(state.content);
   const [updateDate, setUpdateDate] = useState(state.date)
-
+  
   const { currentUser } = useContext(AuthContext);
 
   const navigate = useNavigate();
@@ -31,6 +31,7 @@ export default function UpdateBlog() {
   
   // console.log(updateImageURL);
   console.log(updateTitle);
+  console.log(currentUser.email);
 
   return (
     <Container
