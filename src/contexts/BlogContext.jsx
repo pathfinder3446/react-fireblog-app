@@ -11,7 +11,9 @@ const BlogContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <BlogContext.Provider value={{ cardInfo }}>{children}</BlogContext.Provider>
+    <BlogContext.Provider value={{ cardInfo }}>
+      {children}
+    </BlogContext.Provider>
   );
 };
 
